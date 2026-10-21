@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Emergency Comms",
+    "slug": "emergency-comms",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FAFAFA",
+    "platforms": ["ios", "android", "web"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emergencycomms.app",
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Silent Grid HF reads your connected WiFi network name to confirm you are linked to a base station."
+      }
+    },
+    "android": {
+      "package": "com.emergencycomms.app",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Silent Grid HF reads your connected WiFi network name to confirm you are linked to a base station."
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}

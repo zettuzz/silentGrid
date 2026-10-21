@@ -1,0 +1,11 @@
+{
+  "title": "AI-Assisted HF Communication",
+  "description": "Streamline communication with a minimalist messaging app designed for quick and efficient message sending, ideal for emergency alerts and updates.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
